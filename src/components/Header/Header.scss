@@ -1,0 +1,17 @@
+.header {
+  padding-top: 8px;
+  margin-bottom: 30px;
+  &__container {
+    position: relative;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #C3C3C6;
+    }
+  }
+}
