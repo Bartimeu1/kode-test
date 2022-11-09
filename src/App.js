@@ -58,7 +58,7 @@ function App() {
       <Context.Provider value={contextItems}>
 
         <Routes>
-          <Route path="/" element={
+          <Route path="/code-test" element={
             <MainPage
               choiceFilter={choiceFilter}
               onInputSearch={onInputSearch}
