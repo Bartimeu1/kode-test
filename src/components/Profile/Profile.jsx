@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Profile.scss";
 
@@ -11,11 +11,11 @@ export default function Profile({contactName, contactSurname, contactAvarar, con
   let newDate = "";
   function formatNumber(number) {
     for (let i = 0; i < number.length; i++) {
-      if (i == 2) {
+      if (i === 2) {
         newNumber += ' (';
-      } else if (i == 5) {
+      } else if (i === 5) {
         newNumber += ') ';
-      } else if (i == 8 || i == 10) {
+      } else if (i === 8 || i === 10) {
         newNumber += ' ';
       }
       newNumber += number[i];
