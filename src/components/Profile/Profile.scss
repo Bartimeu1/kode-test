@@ -54,6 +54,20 @@
     align-items: center;
     margin-bottom: 47px;
     cursor: pointer;
+    &--top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__birth {
+      display: flex;
+      align-items: center;
+    }
+    &-age {
+      color: #97979B;
+      font-weight: 500;
+      font-size: 16px;
+    }
     &-img {
       margin-right: 14px;
     }

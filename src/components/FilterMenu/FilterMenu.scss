@@ -8,3 +8,17 @@
     margin: 0 12px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .filter {
+    overflow-x: scroll;
+    white-space: nowrap;
+    &__list {
+      padding-bottom: 10px;
+    }
+  }
+  .filter::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
