@@ -57,31 +57,7 @@ function App() {
     <div className="App">
       <Context.Provider value={contextItems}>
 
-        <Routes>
-          <Route path="/" exact element={
-            <MainPage
-              choiceFilter={choiceFilter}
-              onInputSearch={onInputSearch}
-              currentContacts={currentContacts}
-            ></MainPage>
-          }>
-          </Route>
-          {contactsData.map(contact => { 
-            return <Route path={`/profile/${contact.userTag}`} key={contact}
-              element={
-                <ProfilePage 
-                  contactName={contact.firstName}
-                  contactSurname={contact.lastName}
-                  contactAvarar={contact.avatarUrl}
-                  contactTag={contact.userTag}
-                  contactPosition={contact.position}
-                  contactPhone={contact.phone}
-                  contactBirthday={contact.birthday}
-                ></ProfilePage>
-              }>
-           </Route>
-          })}
-        </Routes>
+        123123
       </Context.Provider>
     </div>
   );
